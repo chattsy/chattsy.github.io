@@ -1,0 +1,37 @@
+/* Transition Code (Chuleta para animaciones)
+	-webkit-transition: all 0.3s ease;                  
+    -moz-transition: all 0.3s ease;                 
+    -o-transition: all 0.3s ease;   
+    -ms-transition: all 0.3s ease;          
+    transition: all 0.3s ease;
+*/
+
+/* Mobile Layout: 480px and below. */
+html{
+}
+
+body{
+	max-width: 960px;
+	margin: 0 auto;
+	/*Standard Width*/
+}
+#header{
+	background: #ccc;
+}
+#container{
+	background: #fff;
+}
+#footer{
+	background: #ccc;
+
+}
+
+
+/* Tablet Layout: 480px to a max of 768px*/
+@media only screen and (min-width: 480px) {
+
+}
+/* Desktop Layout: 769px to a max of 1232px */
+@media only screen and (min-width: 769px) {
+
+}

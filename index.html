@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+
+        <meta charset="utf-8">
+        <title>Website Title</title>
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+
+        <div id="header">Header</div>
+        <!-- header -->
+
+        <div id="container">Jquery, Favicon, CSS Reset, CSS Style Sheet with Media Queries</div>
+        <!-- container -->
+
+        <div id="footer">Footer</div>
+        <!-- footer -->
+
+
+    </body>
+    <!-- SCRIPTS (After html for page speed)-->
+    <!-- <script src="js/jquery-1.10.1.min.js"/></script> Uncomment for Local JQuery -->
+    <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+    <!-- without http://, jquery supports http and https -->
+    <script src="js/jquery.localscroll-1.2.7-min.js"></script>
+    <!-- Script for Smooth Scrolling -->
+    <script src="js/jquery.scrollTo-1.4.3.1-min.js"></script>
+    <!-- Script for Smooth Scrolling on links-->
+    <script type="text/javascript">
+        //Go to Top. Use this code:  <a href="#header">Go to Top</a>
+        $(document).ready(function(){
+            $('#header ul').localScroll();
+
+            $("a[href='#header']").click(function() {
+              $("html, body").animate({ scrollTop: 0 }, 400);
+              return false;
+          });
+    })
+    </script>
+</html>
